@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+* {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Шапка */
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.block-content {
+  width: 70%;
+}
+
+.card-tape {
+  display: flex;
+  column-gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(43, 43, 199);
+}
+
+.date {
+  color: rgb(156, 152, 152);
+  margin-left: 20px;
+  font-size: 14px;
+  padding-top: 3px;
+}
+
+.news-list a {
+  font-size: 16px;
+}
+
+.news-list li {
+  position: relative;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.iconsImg {
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  margin-left: -20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.exchange-rate {
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Контент */
+
+.banner {
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chapter {
+  display: flex;
+  column-gap: 10px;
+  margin: 10px 0;
+}
+
+.inputBlock {
+  position: relative;
+  width: 80%;
+}
+
+.yandex {
+  position: absolute;
+  left: -100px;
+  bottom: -3px;
+  font-size: 30px;
+  color: black;
+}
+
+.ya {
+  color: red;
+}
+
+.input {
+  width: 100%;
+  padding: 5px;
+}
+
+.btn {
+  position: absolute;
+  right: -15px;
+  margin-top: -30px;
+
+  width: 80px;
+  height: 30px;
+}
+
+.hint {
+  margin: 10px 0;
+}
+
+.valueColor {
+  color: rgb(156, 152, 152);
+}
+
+/* Футер */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.card-li {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-item {
+  display: flex;
+  flex-direction: column;
 }
